@@ -4,15 +4,16 @@ phases:
   install:
     runtime-versions:
       nodejs: 18
-  pre_build:
+  pre_build: 
     commands:
+        # install npm
         - npm install
        
   build:
     commands:
-      - npm run test
-      # - npm run build
-      
+        # run build  script
+        # - npm run build
+        - npm test -- --watchAll=false
      
 artifacts:
   # include all files required to run application
