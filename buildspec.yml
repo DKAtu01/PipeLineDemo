@@ -15,7 +15,7 @@ phases:
         - npm run build
      
 artifacts:
-  # include all files required to run application - change
+  # include all files required to run application - another change
   # notably excluded is node_modules, as this will cause overwrite error on deploy
   files:
     - "**/*"
